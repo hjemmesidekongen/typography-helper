@@ -1,0 +1,141 @@
+// |--------------------------------------------------------------------------
+// | Typography helper
+// |--------------------------------------------------------------------------
+// |
+
+// --------------------------------------------------
+// Variables
+// --------------------------------------------------
+
+// Letter spacing
+@headings-letter-spacing: 0;
+@letter-spacing: 0;
+
+// Font weight
+@headings-font-weight-light: 300;
+@headings-font-weight: 600;
+@headings-font-weight-bold: 800;
+
+@font-weight-light: 300;
+@font-weight: 400;
+@font-weight-bold: 600;
+
+// --------------------------------------------------
+// Mixins
+// --------------------------------------------------
+
+// Headings line height
+.line-height-heading(@font-size) {
+  line-height: floor((@font-size * @headings-line-height));
+}
+
+// Line height
+.line-height(@font-size) {
+  line-height: floor((@font-size * @line-height-base));
+}
+
+// --------------------------------------------------
+// Styling
+// --------------------------------------------------
+
+// Additional identifiers
+.heading-h1 {
+  &:extend(h1);
+}
+.heading-h2 {
+  &:extend(h2);
+}
+.heading-h3 {
+  &:extend(h3);
+}
+.heading-h4 {
+  &:extend(h4);
+}
+.heading-h5 {
+  &:extend(h5);
+}
+.heading-h6 {
+  &:extend(h6);
+}
+
+// Font weight
+body {
+  font-weight: @font-weight;
+}
+.light {
+  font-weight: @font-weight-light;
+}
+.bold, strong {
+  font-weight: @font-weight-bold;
+}
+
+h1, .heading-h1,
+h2, .heading-h2,
+h3, .heading-h3,
+h4, .heading-h4,
+h5, .heading-h5,
+h6, .heading-h6,
+.lead {
+  font-weight: @headings-font-weight;
+
+  &.light {
+    font-weight: @headings-font-weight-light;
+  }
+
+  strong, &.bold {
+    font-weight: @headings-font-weight-bold;
+  }
+}
+
+// Letter spacing
+body {
+  letter-spacing: @letter-spacing;
+}
+
+h1, .heading-h1,
+h2, .heading-h2,
+h3, .heading-h3,
+h4, .heading-h4,
+h5, .heading-h5,
+h6, .heading-h6,
+.lead {
+  letter-spacing: @headings-letter-spacing;
+}
+
+// --------------------------------------------------
+// Variants
+// --------------------------------------------------
+
+// --------------------------------------------------
+// Responsive
+// --------------------------------------------------
+
+// Mobile - and up
+@media @media-query-mobile {}
+
+// Mobile - only
+@media @media-query-mobile-only {}
+
+// Tablet - and up
+@media @media-query-tablet {}
+
+// Tablet - only
+@media @media-query-tablet-only {}
+
+// Desktop - and up
+@media @media-query-desktop {}
+
+// Desktop - only
+@media @media-query-desktop-only {}
+
+// Large desktop - and up
+@media @media-query-large-desktop {}
+
+// Print
+@media print {}
+
+// Touch
+.touchevents {}
+
+// No touch
+.no-touchevents {}

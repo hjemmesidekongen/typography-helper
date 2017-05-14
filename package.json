@@ -1,0 +1,18 @@
+{
+  "name": "typography-helper",
+  "version": "1.0.0",
+  "description": "Provides useful HTML classes for font size and weight.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hjemmesidekongen/typography-helper.git"
+  },
+  "author": "Morten Nissen <mail@hjemmesidekongen.dk>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hjemmesidekongen/typography-helper/issues"
+  },
+  "homepage": "https://github.com/hjemmesidekongen/typography-helper#readme"
+}

@@ -1,0 +1,141 @@
+// |--------------------------------------------------------------------------
+// | Typography helper
+// |--------------------------------------------------------------------------
+// |
+
+// --------------------------------------------------
+// Variables
+// --------------------------------------------------
+
+// Letter spacing
+$headings-letter-spacing: 0 !default;
+$letter-spacing: 0 !default;
+
+// Font weight
+$headings-font-weight-light: 300 !default;
+$headings-font-weight: 600 !default;
+$headings-font-weight-bold: 800 !default;
+
+$font-weight-light: 300 !default;
+$font-weight: 400 !default;
+$font-weight-bold: 600 !default;
+
+// --------------------------------------------------
+// Mixins
+// --------------------------------------------------
+
+// Headings line height
+@mixin line-height-heading($font-size) {
+  line-height: floor(($font-size * $headings-line-height));
+}
+
+// Line height
+@mixin line-height($font-size) {
+  line-height: floor(($font-size * $line-height-base));
+}
+
+// --------------------------------------------------
+// Styling
+// --------------------------------------------------
+
+// Additional identifiers
+.heading-h1 {
+  @extend h1;
+}
+.heading-h2 {
+  @extend h2;
+}
+.heading-h3 {
+  @extend h3;
+}
+.heading-h4 {
+  @extend h4;
+}
+.heading-h5 {
+  @extend h5;
+}
+.heading-h6 {
+  @extend h6;
+}
+
+// Font weight
+body {
+  font-weight: $font-weight;
+}
+.light {
+  font-weight: $font-weight-light;
+}
+.bold, strong {
+  font-weight: $font-weight-bold;
+}
+
+h1, .heading-h1,
+h2, .heading-h2,
+h3, .heading-h3,
+h4, .heading-h4,
+h5, .heading-h5,
+h6, .heading-h6,
+.lead {
+  font-weight: $headings-font-weight;
+
+  &.light {
+    font-weight: $headings-font-weight-light;
+  }
+
+  strong, &.bold {
+    font-weight: $headings-font-weight-bold;
+  }
+}
+
+// Letter spacing
+body {
+  letter-spacing: $letter-spacing;
+}
+
+h1, .heading-h1,
+h2, .heading-h2,
+h3, .heading-h3,
+h4, .heading-h4,
+h5, .heading-h5,
+h6, .heading-h6,
+.lead {
+  letter-spacing: $headings-letter-spacing;
+}
+
+// --------------------------------------------------
+// Variants
+// --------------------------------------------------
+
+// --------------------------------------------------
+// Responsive
+// --------------------------------------------------
+
+// Mobile - and up
+@include media-breakpoint-up(xs) {}
+
+// Mobile - only
+@include media-breakpoint-only(xs) {}
+
+// Tablet - and up
+@include media-breakpoint-up(sm) {}
+
+// Tablet - only
+@include media-breakpoint-only(sm) {}
+
+// Desktop - and up
+@include media-breakpoint-up(md) {}
+
+// Desktop - only
+@include media-breakpoint-only(md) {}
+
+// Large desktop - and up
+@include media-breakpoint-up(lg) {}
+
+// Print
+@media print {}
+
+// Touch
+.touchevents {}
+
+// No touch
+.no-touchevents {}
