@@ -12,7 +12,30 @@ $font-weight: 400 !default;
 $font-weight-bold: 600 !default;
 
 // Responsive
-$xs-heading-font-size-reduction: .8 !default;
-$sm-heading-font-size-reduction: .85 !default;
-$md-heading-font-size-reduction: 1 !default;
-$lg-heading-font-size-reduction: 1 !default;
+$xs-heading-font-size-h1-reduction: .8 !default;
+$xs-heading-font-size-h2-reduction: .8 !default;
+$xs-heading-font-size-h3-reduction: .8 !default;
+$xs-heading-font-size-h4-reduction: 1 !default;
+$xs-heading-font-size-h5-reduction: 1 !default;
+$xs-heading-font-size-h6-reduction: 1 !default;
+
+$sm-heading-font-size-h1-reduction: .85 !default;
+$sm-heading-font-size-h2-reduction: .85 !default;
+$sm-heading-font-size-h3-reduction: .85 !default;
+$sm-heading-font-size-h4-reduction: 1 !default;
+$sm-heading-font-size-h5-reduction: 1 !default;
+$sm-heading-font-size-h6-reduction: 1 !default;
+
+$md-heading-font-size-h1-reduction: 1 !default;
+$md-heading-font-size-h2-reduction: 1 !default;
+$md-heading-font-size-h3-reduction: 1 !default;
+$md-heading-font-size-h4-reduction: 1 !default;
+$md-heading-font-size-h5-reduction: 1 !default;
+$md-heading-font-size-h6-reduction: 1 !default;
+
+$lg-heading-font-size-h1-reduction: 1 !default;
+$lg-heading-font-size-h2-reduction: 1 !default;
+$lg-heading-font-size-h3-reduction: 1 !default;
+$lg-heading-font-size-h4-reduction: 1 !default;
+$lg-heading-font-size-h5-reduction: 1 !default;
+$lg-heading-font-size-h6-reduction: 1 !default;

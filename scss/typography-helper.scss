@@ -50,12 +50,12 @@ body {
   font-weight: $font-weight-bold;
 }
 
-h1, .heading-h1,
-h2, .heading-h2,
-h3, .heading-h3,
-h4, .heading-h4,
-h5, .heading-h5,
-h6, .heading-h6,
+h1, .h1, .heading-h1,
+h2, .h2, .heading-h2,
+h3, .h3, .heading-h3,
+h4, .h4, .heading-h4,
+h5, .h5, .heading-h5,
+h6, .h6, .heading-h6,
 .lead {
   font-weight: $headings-font-weight;
 
@@ -73,12 +73,12 @@ body {
   letter-spacing: $letter-spacing;
 }
 
-h1, .heading-h1,
-h2, .heading-h2,
-h3, .heading-h3,
-h4, .heading-h4,
-h5, .heading-h5,
-h6, .heading-h6,
+h1, .h1, .heading-h1,
+h2, .h2, .heading-h2,
+h3, .h3, .heading-h3,
+h4, .h4, .heading-h4,
+h5, .h5, .heading-h5,
+h6, .h6, .heading-h6,
 .lead {
   letter-spacing: $headings-letter-spacing;
 }
@@ -96,12 +96,12 @@ h6, .heading-h6,
 
 // Mobile - only
 @media #{$breakpoint-mobile-only} {
-  h1, .h1, .heading-h1 { font-size: floor( ( $font-size-h1 * $xs-heading-font-size-reduction ) ); }
-  h2, .h2, .heading-h2 { font-size: floor( ( $font-size-h2 * $xs-heading-font-size-reduction ) ); }
-  h3, .h3, .heading-h3 { font-size: floor( ( $font-size-h3 * $xs-heading-font-size-reduction ) ); }
-  h4, .h4, .heading-h4 { font-size: floor( ( $font-size-h4 * $xs-heading-font-size-reduction ) ); }
-  h5, .h5, .heading-h5 { font-size: floor( ( $font-size-h5 * $xs-heading-font-size-reduction ) ); }
-  h6, .h6, .heading-h6 { font-size: floor( ( $font-size-h6 * $xs-heading-font-size-reduction ) ); }
+  h1, .h1, .heading-h1 { font-size: floor( ( $font-size-h1 * $xs-heading-font-size-h1-reduction ) ); }
+  h2, .h2, .heading-h2 { font-size: floor( ( $font-size-h2 * $xs-heading-font-size-h2-reduction ) ); }
+  h3, .h3, .heading-h3 { font-size: floor( ( $font-size-h3 * $xs-heading-font-size-h3-reduction ) ); }
+  h4, .h4, .heading-h4 { font-size: floor( ( $font-size-h4 * $xs-heading-font-size-h4-reduction ) ); }
+  h5, .h5, .heading-h5 { font-size: floor( ( $font-size-h5 * $xs-heading-font-size-h5-reduction ) ); }
+  h6, .h6, .heading-h6 { font-size: floor( ( $font-size-h6 * $xs-heading-font-size-h6-reduction ) ); }
 }
 
 // Tablet - and up
@@ -109,12 +109,12 @@ h6, .heading-h6,
 
 // Tablet - only
 @media #{$breakpoint-tablet-only} {
-  h1, .h1, .heading-h1 { font-size: floor( ( $font-size-h1 * $sm-heading-font-size-reduction ) ); }
-  h2, .h2, .heading-h2 { font-size: floor( ( $font-size-h2 * $sm-heading-font-size-reduction ) ); }
-  h3, .h3, .heading-h3 { font-size: floor( ( $font-size-h3 * $sm-heading-font-size-reduction ) ); }
-  h4, .h4, .heading-h4 { font-size: floor( ( $font-size-h4 * $sm-heading-font-size-reduction ) ); }
-  h5, .h5, .heading-h5 { font-size: floor( ( $font-size-h5 * $sm-heading-font-size-reduction ) ); }
-  h6, .h6, .heading-h6 { font-size: floor( ( $font-size-h6 * $sm-heading-font-size-reduction ) ); }
+  h1, .h1, .heading-h1 { font-size: floor( ( $font-size-h1 * $sm-heading-font-size-h1-reduction ) ); }
+  h2, .h2, .heading-h2 { font-size: floor( ( $font-size-h2 * $sm-heading-font-size-h2-reduction ) ); }
+  h3, .h3, .heading-h3 { font-size: floor( ( $font-size-h3 * $sm-heading-font-size-h3-reduction ) ); }
+  h4, .h4, .heading-h4 { font-size: floor( ( $font-size-h4 * $sm-heading-font-size-h4-reduction ) ); }
+  h5, .h5, .heading-h5 { font-size: floor( ( $font-size-h5 * $sm-heading-font-size-h5-reduction ) ); }
+  h6, .h6, .heading-h6 { font-size: floor( ( $font-size-h6 * $sm-heading-font-size-h6-reduction ) ); }
 }
 
 // Desktop - and up
@@ -122,22 +122,22 @@ h6, .heading-h6,
 
 // Desktop - only
 @media #{$breakpoint-desktop-only} {
-  h1, .h1, .heading-h1 { font-size: floor( ( $font-size-h1 * $md-heading-font-size-reduction ) ); }
-  h2, .h2, .heading-h2 { font-size: floor( ( $font-size-h2 * $md-heading-font-size-reduction ) ); }
-  h3, .h3, .heading-h3 { font-size: floor( ( $font-size-h3 * $md-heading-font-size-reduction ) ); }
-  h4, .h4, .heading-h4 { font-size: floor( ( $font-size-h4 * $md-heading-font-size-reduction ) ); }
-  h5, .h5, .heading-h5 { font-size: floor( ( $font-size-h5 * $md-heading-font-size-reduction ) ); }
-  h6, .h6, .heading-h6 { font-size: floor( ( $font-size-h6 * $md-heading-font-size-reduction ) ); }
+  h1, .h1, .heading-h1 { font-size: floor( ( $font-size-h1 * $md-heading-font-size-h1-reduction ) ); }
+  h2, .h2, .heading-h2 { font-size: floor( ( $font-size-h2 * $md-heading-font-size-h2-reduction ) ); }
+  h3, .h3, .heading-h3 { font-size: floor( ( $font-size-h3 * $md-heading-font-size-h3-reduction ) ); }
+  h4, .h4, .heading-h4 { font-size: floor( ( $font-size-h4 * $md-heading-font-size-h4-reduction ) ); }
+  h5, .h5, .heading-h5 { font-size: floor( ( $font-size-h5 * $md-heading-font-size-h5-reduction ) ); }
+  h6, .h6, .heading-h6 { font-size: floor( ( $font-size-h6 * $md-heading-font-size-h6-reduction ) ); }
 }
 
 // Large desktop - and up
 @media #{$breakpoint-large-desktop-and-up} {
-  h1, .h1, .heading-h1 { font-size: floor( ( $font-size-h1 * $lg-heading-font-size-reduction ) ); }
-  h2, .h2, .heading-h2 { font-size: floor( ( $font-size-h2 * $lg-heading-font-size-reduction ) ); }
-  h3, .h3, .heading-h3 { font-size: floor( ( $font-size-h3 * $lg-heading-font-size-reduction ) ); }
-  h4, .h4, .heading-h4 { font-size: floor( ( $font-size-h4 * $lg-heading-font-size-reduction ) ); }
-  h5, .h5, .heading-h5 { font-size: floor( ( $font-size-h5 * $lg-heading-font-size-reduction ) ); }
-  h6, .h6, .heading-h6 { font-size: floor( ( $font-size-h6 * $lg-heading-font-size-reduction ) ); }
+  h1, .h1, .heading-h1 { font-size: floor( ( $font-size-h1 * $lg-heading-font-size-h1-reduction ) ); }
+  h2, .h2, .heading-h2 { font-size: floor( ( $font-size-h2 * $lg-heading-font-size-h2-reduction ) ); }
+  h3, .h3, .heading-h3 { font-size: floor( ( $font-size-h3 * $lg-heading-font-size-h3-reduction ) ); }
+  h4, .h4, .heading-h4 { font-size: floor( ( $font-size-h4 * $lg-heading-font-size-h4-reduction ) ); }
+  h5, .h5, .heading-h5 { font-size: floor( ( $font-size-h5 * $lg-heading-font-size-h5-reduction ) ); }
+  h6, .h6, .heading-h6 { font-size: floor( ( $font-size-h6 * $lg-heading-font-size-h6-reduction ) ); }
 }
 
 // Print
