@@ -11,6 +11,9 @@ $font-weight-light: 300 !default;
 $font-weight: 400 !default;
 $font-weight-bold: 600 !default;
 
+// Spacing
+$paragraphs-bottom-spacing: floor( ( $line-height-computed / 2 ) ) !default;
+
 // Responsive
 $xs-heading-font-size-h1-reduction: .8 !default;
 $xs-heading-font-size-h2-reduction: .8 !default;
